@@ -15,6 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672/'
 
 
 # Quick-start development settings - unsuitable for production
@@ -32,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+   
     'app',
     'django.contrib.admin',
     'django.contrib.auth',

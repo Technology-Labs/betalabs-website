@@ -1,0 +1,14 @@
+confusable-homoglyphs==3.2.0
+dj-database-url==0.5.0
+Django==3.0
+django-heroku
+django-registration
+gunicorn
+importlib-metadata
+Pillow
+psycopg2
+python-decouple
+pytz
+sqlparse
+whitenoise
+zipp
