@@ -29,7 +29,7 @@ MODE=config("MODE", default="dev")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://technolabs.co.ke']
 
 # Email configurations 
 EMAIL_USE_TLS = config('EMAIL_USE_TLS')
@@ -102,9 +102,15 @@ if config('MODE')=="dev":
 # production
 else:
    DATABASES = {
-       'default': dj_database_url.config(
-           default=config('DATABASE_URL')
-       )
+    'default': {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'tl_website_db',
+    'USER': 'gichimu',
+    'PASSWORD': 'triocom'
+    'HOST': 'localhost',
+    'PORT': '5432',
+  }
+
    }
 
 db_from_env = dj_database_url.config(conn_max_age=500)
@@ -145,10 +151,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = 'staticfiles'
 
-STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATIC_URL = '/static/'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
