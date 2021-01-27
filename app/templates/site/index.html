@@ -1,139 +1,72 @@
 {% extends 'base.html' %}
+{% load bootstrap4 %}
 {% block content %}
 {%load static%}
 
 	  <section id="home-section" class="hero">
-	  	<h3 class="vr">Welcome to BetaLabs</h3>
+	  	<h3 class="vr">dare to create >></h3>
 		  <div class="home-slider js-fullheight owl-carousel">
 	      <div class="slider-item js-fullheight">
 	      	<div class="overlay"></div>
 	        <div class="container-fluid p-0">
 	          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last img js-fullheight" style="background-image:url(images/bg_1.jpg);">
+	          	<div class="one-third order-md-last img js-fullheight" style="background-image:url(/static/images/pic3.jpg);">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">Welcome to the betalabs</span>
-			            <h1 class="mb-4 mt-3">Small Details Make A Big <span>Impression</span></h1>
-			            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
+			            <h1 class="mb-4 mt-3"> <span>Modern</span> Problems Require <span>Digital</span> Solutions</h1>
+			            <p>We provide software solutions to organisations and businesses.</p>
 			            
-			            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Get in touch</a></p>
+			            <p><button  class="btn btn-warning px-5 py-3 mt-3" data-toggle="modal" data-target="#quoteModal">Request Quote</button></p>
 		            </div>
 		          </div>
 	        	</div>
 	        </div>
 	      </div>
 
-	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
-	        <div class="container-fluid p-0">
-	          <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last img js-fullheight" style="background-image:url(images/bg_2.jpg);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Welcome to the betalabs</span>
-			            <h1 class="mb-4 mt-3"><span>Strategic</span> Design And <span>Technology</span> Agency</h1>
-			            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
-			            
-			            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Get in touch</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
+	     
 	    </div>
     </section>
 		
 
     <section class="ftco-section ftco-no-pb ftco-no-pt ftco-services bg-light" id="services-section">
-      <div class="container">
+      <div class="container"><br><br>
+		<h2 class="text-center" style="font-family: monospace !important; color: #0000ff;"><span style="color: #ffa500;"><i class="fas fa-laptop-code"></i></span> Services</h2><br><br>
         <div class="row no-gutters">
-          <div class="col-md-4 ftco-animate py-5 nav-link-wrap">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link px-4 active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true"><span class="mr-3 flaticon-ideas"></span> Business Strategy</a>
-
-              <a class="nav-link px-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-flasks"></span> Research</a>
-
-              <a class="nav-link px-4" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false"><span class="mr-3 flaticon-analysis"></span> Data Analysis</a>
-
-              <a class="nav-link px-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false"><span class="mr-3 flaticon-web-design"></span> UI Design</a>
-
-              <a class="nav-link px-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false"><span class="mr-3 flaticon-ux-design"></span> Ux Design</a>
-
-              <a class="nav-link px-4" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false"><span class="mr-3 flaticon-innovation"></span> Technology</a>
-
-              <a class="nav-link px-4" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="false"><span class="mr-3 flaticon-idea"></span> Creative</a>
-            </div>
-          </div>
-          <div class="col-md-8 ftco-animate p-4 p-md-5 d-flex align-items-center">
-            
-            <div class="tab-content pl-md-5" id="v-pills-tabContent">
-
-              <div class="tab-pane fade show active py-5" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-                <span class="icon mb-3 d-block flaticon-ideas"></span>
-                <h2 class="mb-4">Business Strategy</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade py-5" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
-                <span class="icon mb-3 d-block flaticon-flasks"></span>
-                <h2 class="mb-4">Research</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade py-5" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
-                <span class="icon mb-3 d-block flaticon-analysis"></span>
-                <h2 class="mb-4">Data Analysis</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade py-5" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
-                <span class="icon mb-3 d-block flaticon-web-design"></span>
-                <h2 class="mb-4">UI Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade py-5" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
-                <span class="icon mb-3 d-block flaticon-ux-design"></span>
-                <h2 class="mb-4">Ux Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade py-5" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
-                <span class="icon mb-3 d-block flaticon-innovation"></span>
-                <h2 class="mb-4">Technology</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade py-5" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
-                <span class="icon mb-3 d-block flaticon-idea"></span>
-                <h2 class="mb-4">Creative Solution</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
-              </div>
-            </div>
-          </div>
+			
+			<!-- <div class="row d-flex contact-info mb-5"> -->
+				<div class="col-md-4 col-lg-4 ">
+					<div class="align-self-stretch box p-4 text-center " id="service-box">
+						<div class="icon  align-items-center justify-content-center">
+							<img src="{% static 'images/website.svg'%}" alt="website" style="width: 200px; height: 200px;">
+						</div><hr>
+						<h4 class="mb-4" class="text-center" >Web Design & Development</h4>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 ">
+					<div class="align-self-stretch box p-4 text-center" id="service-box">
+						<div class="icon  align-items-center justify-content-center">
+							<img src="{% static 'images/ecom.svg'%}" style="width: 200px; height: 200px;">
+						</div><hr>
+						<h4 class="mb-4" class="text-center">E-commerce Development</h4>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4  ">
+					<div class="align-self-stretch box p-4 text-center" id="service-box">
+						<div class="icon  align-items-center justify-content-center">
+							<img src="{% static 'images/software.svg'%}" style="width:200px; height: 200px;">
+						</div><hr>
+						<h4 class="mb-4" class="text-center">Software Development</h4>
+					</div>
+				</div>
+				
+			  <!-- </div> -->
         </div>
-      </div>
-    </section>
+      </div><br>
+    </section><hr>
 
-    <section class="ftco-section-2 img" style="background-image: url(images/bg_3.jpg);">
+    <!-- <section class="ftco-section-2 img" style="background-image: url(images/bg_3.jpg);">
     	<div class="container">
     		<div class="row d-md-flex justify-content-end">
     			<div class="col-md-6">
@@ -176,15 +109,16 @@
     			</div>
     		</div>
     	</div>
-    </section>
+    </section> -->
 
     <section class="ftco-section ftco-project bg-light" id="projects-section">
+		
     	<div class="container px-md-5">
+			<h2 class="text-center" style="font-family: monospace !important; color:#0000ff;"><span style="color: #ffa500;"><i class="fas fa-briefcase"></i></span> Works </h2><br>
+
     		<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<span class="subheading">Accomplishments</span>
-            <h2 class="mb-4">Our Projects</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          	<span class="subheading">Web</span>
           </div>
         </div>
     		<div class="row">
@@ -193,10 +127,10 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="#" class="img-fluid" alt="Colorlib Template">
+				    				<img src="{% static 'images/gohf.jpg'%}" class="img-fluid" alt="project" style="height: 300px;">
 				    				<div class="text px-4">
-				    					<h3><a href="#">Work Name</a></h3>
-				    					<span>Web Design</span>
+				    					<h3><a class="btn btn-outline-danger" href="https://gardenofhopefoundation.org">Link</a></h3>
+				    					<span>Website</span>
 				    				</div>
 			    				</div>
 		    				</div>
@@ -204,10 +138,10 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="#" class="img-fluid" alt="Colorlib Template">
+				    				<img src="{% static 'images/auto.jpg'%}" class="img-fluid" alt="project" style="height: 300px;">
 				    				<div class="text px-4">
-				    					<h3><a href="#">Work Name</a></h3>
-				    					<span>Web Design</span>
+				    					<h3><a class="btn btn-outline-danger" href="https://autopoint.co.ke">Link</a></h3>
+				    					<span>E-commerce</span>
 				    				</div>
 			    				</div>
 		    				</div>
@@ -215,47 +149,17 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="#" class="img-fluid" alt="Colorlib Template">
+				    				<img src="{% static 'images/amara.jpg'%}" class="img-fluid" alt="project" style="height: 300px;">
 				    				<div class="text px-4">
-				    					<h3><a href="#">Work Name</a></h3>
-				    					<span>Web Design</span>
+				    					<h3><a class="btn btn-outline-danger" href="https://amaracleaning.co.ke">Link</a></h3>
+				    					<span>Website</span>
 				    				</div>
 			    				</div>
 		    				</div>
             	</div>
-            	<div class="item">
-            		<div class="project">
-		    					<div class="img">
-				    				<img src="#" class="img-fluid" alt="Colorlib Template">
-				    				<div class="text px-4">
-				    					<h3><a href="#">Work Name</a></h3>
-				    					<span>Web Design</span>
-				    				</div>
-			    				</div>
-		    				</div>
-            	</div>
-            	<div class="item">
-            		<div class="project">
-		    					<div class="img">
-				    				<img src="#" class="img-fluid" alt="Colorlib Template">
-				    				<div class="text px-4">
-				    					<h3><a href="#">Work Name</a></h3>
-				    					<span>Web Design</span>
-				    				</div>
-			    				</div>
-		    				</div>
-            	</div>
-            	<div class="item">
-            		<div class="project">
-		    					<div class="img">
-				    				<img src="#" class="img-fluid" alt="Colorlib Template">
-				    				<div class="text px-4">
-				    					<h3><a href="#">Work Name</a></h3>
-				    					<span>Web Design</span>
-				    				</div>
-			    				</div>
-		    				</div>
-            	</div>
+            	
+            	
+            	
             </div>
           </div>
     		</div>
@@ -264,38 +168,34 @@
 		
 
 		<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-    	<div class="container">
+    	<div class="container"><br><br>
+			<h2 class="text-center" style="font-family: monospace !important; color:#0000ff;"><span style="color: #ffa500;"><i class="far fa-question-circle"></i></span> Who We Are</h2><br>
+
     		<div class="row d-flex">
     			<div class="col-md-6 col-lg-5 d-flex">
-    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.jpg);">
+    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(/static/images/tl.jpg);">
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-7 pl-lg-5 py-5">
     				<div class="py-md-5">
 	    				<div class="row justify-content-start pb-3">
 			          <div class="col-md-12 heading-section ftco-animate">
-			          	<span class="subheading">Welcome to digilab</span>
-			            <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">We Are Digital Agency</h2>
-			            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-			            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-			            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+			          	<span class="subheading text-center">Welcome to technolabs</span>
+			            <h2 class="mb-4 text-center" style="font-size: 34px; text-transform: lowercase; color: #ffa500;">a software development agency.</h2>
+			            <p style="width: 80%; margin: auto; font-family: monospace;">We are a software development agency that's made up of a team of young techies who are passionate about 
+							coding and technology. <br><br>Our mission is to use software to provide digital solutions to problems 
+							encountered by small and medium enterprises.<br><br> By using the best coding practices and modern technologies, we create 
+							high quality software solutions that cater to the needs of our clients.</p>
 			          </div>
 			        </div>
-		          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-	              <div class="text p-4 bg-primary">
-	              	<p class="mb-0">
-		                <span class="number" data-number="20">0</span>
-		                <span>Years of experience</span>
-	                </p>
-	              </div>
-		          </div>
+		          
 		        </div>
 	        </div>
         </div>
     	</div>
     </section>
 
-    <section class="ftco-section">
+    <!-- <section class="ftco-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-6 heading-section text-center ftco-animate">
@@ -391,7 +291,7 @@
 					</div>
 				</div>
     	</div>
-    </section>
+    </section> -->
 
 		<section class="ftco-section testimony-section" id="testimony-section">
       <div class="container">
@@ -405,71 +305,71 @@
             <div class="carousel-testimony owl-carousel ftco-owl">
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img" style="background-image: url(/static/images/dan.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text px-4 pb-5">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">John Fox</p>
-                    <span class="position">Businessman</span>
+                    <p class="mb-4">Our go to techies. We love working with these guys</p>
+                    <p class="name">Daniel Njoroge</p>
+                    <span class="position">Tiny House Productions</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_2.jpg)">
+                  <div class="user-img" style="background-image: url(/static/images/Joe1.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text px-4 pb-5">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">John Fox</p>
-                    <span class="position">Businessman</span>
+                    <p class="mb-4">I got recommended by a friend. Thanks for making my company website look Awesome</p>
+                    <p class="name">Joe Odongo</p>
+                    <span class="position">Blogger</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_3.jpg)">
+                  <div class="user-img" style="background-image: url(/static/images/rob.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text px-4 pb-5">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">John Fox</p>
-                    <span class="position">Businessman</span>
+                    <p class="mb-4">We've worked with this agency on a number of internal software and I would recommend them.</p>
+                    <p class="name">Robert Mwai</p>
+                    <span class="position">Creative Heritage</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_4.jpg)">
+                  <div class="user-img" style="background-image: url(/static/images/su.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text px-4 pb-5">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">John Fox</p>
-                    <span class="position">Businessman</span>
+                    <p class="mb-4">Our cleaning company needed a website and the website we got was impressive. Good Job!</p>
+                    <p class="name">Susan Kariithi</p>
+                    <span class="position">Amara Cleaning</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img" style="background-image: url(images/person_3.jpg)">
+                  <div class="user-img" style="background-image: url(/static/images/doreen.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text px-4 pb-5">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">John Fox</p>
-                    <span class="position">Businessman</span>
+                    <p class="mb-4">I like the continual support we receive from working with you guys.</p>
+                    <p class="name">Doreen Aketch</p>
+                    <span class="position">Joy Supermarket</span>
                   </div>
                 </div>
               </div>
@@ -479,7 +379,7 @@
       </div>
     </section>
 
-    <section class="ftco-section bg-light" id="blog-section">
+    <!-- <section class="ftco-section bg-light" id="blog-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -569,83 +469,81 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Contact</span>
-            <h2 class="mb-4">Contact Us</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <h2 class="mb-4">Reach Out</h2>
           </div>
         </div>
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">info@betalabs</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Website</h3>
-	            <p><a href="#">betalabs.tech</a></p>
-	          </div>
-          </div>
-        </div>
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-          
-          </div>
-
-          <div class="col-md-6 d-flex">
-
-          </div>
-        </div>
-      </div>
+        
+		<div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-map-signs"></span>
+					</div>
+					<h3 class="mb-4">Address</h3>
+				  <p>31170 - 00600, Nairobi</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-phone2"></span>
+					</div>
+					<h3 class="mb-4">Contact Number</h3>
+				  <p><a href="tel://1234567920">(+254) 741 795 512</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-paper-plane"></span>
+					</div>
+					<h3 class="mb-4">Email Address</h3>
+				  <p><a href="mailto:info@technolabs.co.ke">info@technolabs.co.ke</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-globe"></span>
+					</div>
+					<h3 class="mb-4">Website</h3>
+				  <p><a href="#">Yes</a></p>
+				</div>
+			</div>
+		  </div>
+      </div><br>
     </section>
 		
+  
+    <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel" style="font-family: monospace;">Quote Request Form:</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				{{form.media}}
+				
+			  <form action="{% url 'quote'%}" method="post" enctype="multipart/form-data">
+				{%csrf_token%}
+				{% bootstrap_form form layout='inline' %}
+				<input type="submit"  class="btn btn-outline-success" value="Submit">	
+				
+			  </form>
+			</div>
+			
+		  </div>
+		</div>
+		</div>
 
 {% endblock %}
+
